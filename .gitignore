@@ -31,3 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+src/main/resources/input_data/
+output_files
+output_files/*
+/src/main/resources/secret_key.txt

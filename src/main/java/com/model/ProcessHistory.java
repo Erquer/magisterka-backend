@@ -1,7 +1,5 @@
 package com.model;
 
-import com.opencsv.bean.CsvBindAndJoinByName;
-import com.opencsv.bean.CsvBindAndJoinByPosition;
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvDate;
 
@@ -85,5 +83,18 @@ public class ProcessHistory {
 
     public void setTimestamp(Date timestamp) {
         this.timestamp = timestamp;
+    }
+
+    @Override
+    public String toString() {
+        return "ProcessHistory{" +
+                "eventType='" + eventType + '\'' +
+                ", processDefinitionId='" + processDefinitionId + '\'' +
+                ", processDefinitionKey='" + processDefinitionKey + '\'' +
+                ", processInstanceId='" + processInstanceId + '\'' +
+                ", startUser='" + startUser + '\'' +
+                ", state='" + state + '\'' +
+                ", timestamp=" + timestamp +
+                '}';
     }
 }
